@@ -143,3 +143,86 @@ section .login-page {
 .forgot a:hover {
 	color: blue;
 }
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f0f0f0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	margin: 20px;
+}
+
+.card-header {
+	background: linear-gradient(to right, #6a11cb, #2575fc);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.card-body {
+	padding: 20px;
+}
+
+.input-group {
+	margin-bottom: 15px;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.input-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.input-group input:focus {
+	border-color: #6a11cb;
+	outline: none;
+}
+
+.button-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button-group button {
+	background: #6a11cb;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.button-group button:hover {
+	background: #2575fc;
+}
+
+.button-group .secondary-btn {
+	background: #ddd;
+	color: #333;
+}
+
+.button-group .secondary-btn:hover {
+	background: #ccc;
+}

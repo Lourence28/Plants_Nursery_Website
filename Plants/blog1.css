@@ -228,3 +228,74 @@ footer {
 .bottom center span {
 	color: white;
 }
+/* Add smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Improve navbar styling */
+.navbar {
+	background-color: #fff;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 10px 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar.scrolled {
+	background-color: #f8f8f8;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhance link styles */
+nav ul li a {
+	font-size: 18px;
+	color: #333;
+	transition: color 0.3s;
+}
+nav ul li a:hover {
+	color: #007bff;
+}
+
+/* Update content styling */
+.content1, .content2 {
+	padding: 20px;
+}
+.content1 .blog-content, .content2 .down-content {
+	line-height: 1.6;
+}
+
+/* Footer improvements */
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #f1f1f1;
+	color: #333;
+}
+footer a {
+	color: #007bff;
+	transition: color 0.3s;
+}
+footer a:hover {
+	color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.navbar {
+		padding: 10px 20px;
+	}
+	nav ul li {
+		margin-right: 20px;
+	}
+	.content1, .content2 {
+		flex-direction: column;
+	}
+	.main-content {
+		flex-direction: column;
+	}
+	.main-content .box {
+		flex-basis: 100%;
+	}
+}

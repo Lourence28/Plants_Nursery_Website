@@ -102,7 +102,7 @@ a {
 	line-height: 20px; 	
 }
 .down-content p {
-	font-size: 20px;s
+	font-size: 20px;
 }
 
 /*footer*/
@@ -227,4 +227,35 @@ footer {
 }
 .bottom center span {
 	color: white;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		padding: 10px;
+	}
+	nav ul {
+		width: 100%;
+		text-align: center;
+	}
+	nav ul li {
+		display: block;
+		margin: 10px 0;
+	}
+	.content1, .content2 {
+		flex-direction: column;
+	}
+	.content1 .img1, .content2 .img1 {
+		width: 100%;
+	}
+	.main-content {
+		flex-direction: column;
+	}
+	.main-content .box {
+		flex-basis: 100%;
+	}
+	.center .content .downtitle {
+		font-size: 30px;
+		margin-top: 20px;
+	}
 }

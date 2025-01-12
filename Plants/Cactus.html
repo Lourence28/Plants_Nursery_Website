@@ -303,3 +303,12 @@
 		</footer>
 	</body>
 </html>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const backToTopButton = document.querySelector(".BackToTop a");
+		backToTopButton.addEventListener("click", function(e) {
+			e.preventDefault();
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		});
+	});
+</script>

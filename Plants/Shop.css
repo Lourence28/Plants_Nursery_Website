@@ -297,3 +297,100 @@ footer {
 .bottom center span {
 	color: white;
 }
+/* Add smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Improve button styles */
+button {
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* Improve link styles */
+a {
+	transition: color 0.3s;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	nav ul {
+		width: 100%;
+		text-align: left;
+	}
+	nav ul li {
+		display: block;
+		margin: 10px 0;
+	}
+	.menu-bar {
+		width: 100%;
+		height: auto;
+	}
+	#shop-content {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.products {
+		width: 100%;
+		margin: 10px 0;
+	}
+	footer {
+		margin-top: 50px;
+	}
+}
+/* Improve the arrangement of flowers */
+#shop-content {
+	margin-top: 120px;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 20px;
+	width: 100%;
+	height: auto;
+}
+
+.products {
+	margin: 0;
+	width: 100%;
+	border: solid;
+	padding: 10px;
+	border-color: lightgray;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.products:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+	transform: scale(1.05);
+}
+
+.products .img {
+	height: 200px;
+	width: 100%;
+}
+
+.products .content {
+	padding: 15px;
+	font-size: 18px;
+}
+
+.products .content h3 {
+	color: green;
+	margin-bottom: 10px;
+}
+
+.products .content a {
+	color: black;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.products .content a:hover {
+	color: green;
+}
